@@ -1,0 +1,70 @@
+.store {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.commodity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    width: 200px; /* 商品框寬度 */
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.commodity img {
+    width: 200px; /* 圖片大小 */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.commodity h2 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .store {
+        gap: 20px;
+        padding: 10px;
+    }
+    .commodity {
+        width: 160px;
+        padding: 20px;
+    }
+    .commodity img {
+        width: 160px;
+        height: 160px;
+    }
+    .commodity h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .store {
+        flex-direction: column;
+        align-items: center;
+    }
+    .commodity {
+        width: 90%;
+        padding: 15px;
+    }
+    .commodity img {
+        width: 100%;
+        height: auto;
+    }
+    .commodity h2 {
+        font-size: 16px;
+    }
+}

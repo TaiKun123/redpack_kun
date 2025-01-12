@@ -1,0 +1,243 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-image: url('file:///C:/Users/user/Desktop/redpack/redimg/背景.JPG'); /* 替換成你的圖片路徑 */
+    background-size: cover;  /* 使背景圖片覆蓋整個頁面 */
+    background-position: center; /* 使背景圖片居中 */
+    background-repeat: no-repeat; /* 防止背景圖片重複 */
+    margin: 0;
+    height: auto;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------------------------------------------------- */
+.container{
+    /* border: 1px solid rgb(2, 192, 255); */
+    width: 100%;
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+    background-size : cover;
+    background-image: url("https://www.crazybackground.com/wp-content/uploads/2019/12/vector-grey-white-abstract-technology-circles-background.jpg")
+}
+.title{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.logo_name{
+    width: 30%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+.connect{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 20px;
+    margin-bottom: 0;
+}
+.connect li{
+    border-top: 0.2px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
+    border-right: 1.5px solid #ffffff;
+    border-left: 1.5px solid #ffffff;
+    width: 180px;
+    height: 30px;
+    margin: 20px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.connect li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.connect li:hover{
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+}
+/* --------------------------------------------------- */
+@media(max-width:768px){
+    .title{
+        flex-direction: column;
+        align-items:center ;
+    }
+    .logo_name{
+        width: 100%;
+        justify-content: center;
+    }
+    .connect{
+        width: 100%;
+    }
+    .connect li{
+        font-size:14px ;  
+        text-align: center;  
+    }
+    .connect li:hover{
+        font-size: 16px;
+    }
+}
+/* --------------------------------------------------- */
+.photo{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.photo img{
+    width: 100%;
+    height: 400px;
+}   
+/* --------------------------------------------------- */
+.redpack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+.normal{
+    border: 2px solid rgb(255, 255, 255);
+    width: 30%;
+    display: grid;
+    place-items: center;
+    height: 300px;
+}
+.normal img{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.normal h3{
+    font-size: 45px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.snack{
+    border: 2px solid rgb(255, 255, 255);
+    width: 30%;
+    height: 300px;
+    display: grid; /* 開啟 grid 布局 */
+    place-items: center; /* 水平垂直居中 */
+}
+.snack  img{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    ; 
+}
+.snack a{
+    text-decoration: none;
+}
+.snack  h3{
+    font-size: 45px;
+    padding-top: 17px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.cartoon{
+    border: 2px solid rgb(255, 255, 255);
+    width: 30%;
+    height: 300px;
+    display: grid; /* 開啟 grid 布局 */
+    place-items: center; /* 水平垂直居中 */
+}
+.cartoon img{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.cartoon a{
+    text-decoration: none;
+}
+.cartoon h3{
+    font-size: 45px;
+    padding-top: 18px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+/* --------------------------------------------------- */
+@media(max-width:768px){
+    .redpack{
+        flex-direction: column;
+    }
+    .normal{
+        width: 100%;
+        height: auto;
+    }
+    .normal h3{
+        padding-bottom: 10px;
+    }
+    .snack{
+        width: 100%;
+        height: auto;
+        font-size: 40px;
+    }
+    .snack h3{
+        padding-bottom: 10px;
+    }
+    .cartoon{
+        width: 100%;
+        height: auto;
+    }
+    .cartoon h3{
+        padding-bottom: 10px;
+    }
+}
+/* --------------------------------------------------- */
